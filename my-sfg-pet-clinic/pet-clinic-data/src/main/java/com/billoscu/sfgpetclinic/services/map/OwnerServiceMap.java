@@ -4,8 +4,9 @@ import java.util.Set;
 
 import com.billoscu.sfgpetclinic.model.Owner;
 import com.billoscu.sfgpetclinic.services.CrudService;
+import com.billoscu.sfgpetclinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
 	public Owner save(Owner object) {
@@ -37,4 +38,11 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 		return super.findById(id);
 	}
 
+	@Override
+	public Owner findByLastname(String lastName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 }
