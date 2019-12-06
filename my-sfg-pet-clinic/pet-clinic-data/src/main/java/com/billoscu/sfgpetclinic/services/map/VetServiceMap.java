@@ -2,10 +2,12 @@ package com.billoscu.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import com.billoscu.sfgpetclinic.model.Vet;
-import com.billoscu.sfgpetclinic.services.CrudService;
 import com.billoscu.sfgpetclinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 	@Override
